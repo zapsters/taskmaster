@@ -15,20 +15,7 @@ https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FIL
 			<div class="sidebar" id="sidebar" data-open="false"></div>
 			<div class="main">
 				<div class="header" id="header"></div>
-				<div class="boxContainer">
-					<div class="boxEntry">
-						<div class="boxHeader">
-							<div><h2>Assignments</h2></div>
-							<span class="material-symbols-outlined">assignment</span>
-						</div>
-					</div>
-					<div class="boxEntry">
-						<div class="boxHeader">
-							<div><h2>Upcoming</h2></div>
-							<span class="material-symbols-outlined">calendar_month</span>
-						</div>
-					</div>
-				</div>
+				<p>Content is here.</p>
 			</div>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
@@ -40,7 +27,7 @@ https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FIL
 			sidebar = document.getElementById("sidebar");
 			$("#sidebar").load( "pieces/sidebar.html", function() {
 				console.log( "Sidebar load was performed." );
-				$('#homebtn').children().addClass("selected");
+				$('#calendarbtn').children().addClass("selected");
 			});
 
 			function toggleSidebar() {
