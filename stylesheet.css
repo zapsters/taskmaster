@@ -17,7 +17,7 @@ body {
     background-color: var(--main);
     width: 100%;
     height: 47px;
-    padding: 13px 0px 13px 13px;
+    padding: 13px 0px 13px 0px;
     margin: 0px;
     color: white;
     position: relative;
@@ -29,7 +29,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    margin-left: 3px;
+    margin-left: 80px;
     display: inline;
 }
 
@@ -143,6 +143,7 @@ body {
     display: flex;
     padding: 10px 0 10px 0;
     min-height: 40px;
+    border-bottom: 2px solid black;
 }
 .boxEntry .boxHeader div {
     font-size: 20;
@@ -163,6 +164,11 @@ body {
     margin: 0 10px 0 0px;
     align-self: flex-start;
 }
+.boxEntry .boxFooter {
+    text-align: center;
+    margin: 4px 0px 4px 0px;
+    font-size: 14px;
+}
 
 .sidebar #btmbtns {
     position: absolute;
@@ -176,6 +182,80 @@ body {
     }
 }
 
+.boxcontainer {
+    width: 100%;
+    max-height: 400px;
+}
+
+.assignment {
+    border-bottom: 2px solid black;
+    font-size: 30px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.assignment span {
+    font-size: 40px;
+    height: 40px;
+    left: 0px;
+    margin: auto 0 auto 0;
+    padding: 0;
+}
+.assignment .assignmentdetails {
+    margin: 0;
+    padding: 3px 0px 0px 5px;
+    flex: 1;
+    border-left: 2px solid black;
+    white-space: nowrap;
+}
+/* Assignment Title */
+.assignmentdetails #title {
+    padding: 0;
+    margin: 0;
+    margin-bottom: -3px;
+    font-size: 22px;
+    text-overflow: ellipsis;
+    font-weight: bold;
+}
+/* Info Text */
+.assignmentdetails h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    color: gray;
+}
+/* Interable text */
+.assignmentdetails div {
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+    color: gray;
+}
+/* Interable text elements */
+.assignmentdetails h5 {
+    padding: 0px;
+    margin: 0px;
+    padding: 2px 5px 2px 2px;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 12px;
+}
+.assignmentdetails p {
+    padding: 0px;
+    margin: 0px;
+    padding: 2px 5px 2px 2px;
+    font-size: 12px;
+    cursor:default;
+}
+
 .main {
     flex: 1;
+}
+
+.aboutbox {
+    text-align: left;
+    padding: 5px 10px 20px 10px;
+}
+.aboutbox p {
+    padding: 3px;
 }

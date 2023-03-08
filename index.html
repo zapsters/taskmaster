@@ -21,39 +21,29 @@ https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FIL
 							<div><h2>Assignments</h2></div>
 							<span class="material-symbols-outlined">assignment</span>
 						</div>
+						
+						<div class="boxcontainer" id="assignmentList"></div>
+
+						<div class="boxFooter">
+							<span style="text-decoration: underline; cursor: pointer;" onclick="createNewAssignment();">Create New Assignment</span>
+						</div>
 					</div>
 					<div class="boxEntry">
 						<div class="boxHeader">
 							<div><h2>Upcoming</h2></div>
 							<span class="material-symbols-outlined">calendar_month</span>
 						</div>
+
+						<div class="boxcontainer" id="eventList"></div>
+
+						<div class="boxFooter">
+							<span style="text-decoration: underline; cursor: pointer;" onclick="createNewEvent();">Create New Event</span>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-		<script>
-			$("#header").load( "pieces/header.html", function() {
-				console.log( "Header load was performed." );
-			});
-
-			sidebar = document.getElementById("sidebar");
-			$("#sidebar").load( "pieces/sidebar.html", function() {
-				console.log( "Sidebar load was performed." );
-				$('#homebtn').children().addClass("selected");
-			});
-
-			function toggleSidebar() {
-				if (sidebar.dataset.open == "true") {
-					//close
-					sidebar.style.width = "70px";
-					sidebar.setAttribute("data-open", "false");
-				} else {
-					//open
-					sidebar.style.width = "250px";
-					sidebar.setAttribute("data-open", "true");
-				}
-			}
-		</script>
+		<script src="scripts/main.js"></script>
 	</body>
 </html>

@@ -12,18 +12,18 @@
     </button>
     <h3>Home Page</h3>
 </div>
-<div class="entry" id="calendarbtn" onclick="location.href='calendar.html';">
+<div class="entry" id="aboutbtn" onclick="location.href='about.html';">
     <button class="icon menuicon" type="button">
-        <span class="material-symbols-outlined">calendar_month</span>
+        <span class="material-symbols-outlined">question_mark</span>
     </button>
-    <h3>Calendar</h3>
+    <h3>About</h3>
 </div>
 
 <!-- Bottom Buttons -->
 <div id="btmbtns">
-    <div class="entry" id="lockbtn" onclick="alert('not functioning yet.')">
+    <div class="entry" id="lockbtn" onclick="toggleLockMode();">
         <button class="icon menuicon" type="button">
-            <span class="material-symbols-outlined">lock_clock</span>
+            <span class="material-symbols-outlined" id="lockspan">lock</span>
         </button>
         <h3>Locked Mode</h3>
     </div>

@@ -1,0 +1,12 @@
+<div class="assignment" data-complete="false">
+    <span class="material-symbols-outlined">event</span>
+    <div class="assignmentdetails">
+        <h3 contenteditable="false" id="title">New event</h3>
+        <h4 contenteditable="false" id="info">Enter event info</h4>
+        <div style="display: flex; margin: 0 0 0 -2px; padding: 0;">
+            <h5 onclick="var parent = this.parentElement.parentElement.parentElement; var container = parent.parentElement.parentElement; var div = parent.parentElement; var assignmentNum = Array.from(container.children).indexOf(div); var title = this.parentElement.parentElement.children[0]; var info = this.parentElement.parentElement.children[1]; eventMaster[assignmentNum].title = title.innerHTML; eventMaster[assignmentNum].info = info.innerHTML; saveCookies(); if(title.contentEditable == 'false') {title.contentEditable='true'; info.contentEditable='true'; this.innerHTML='Finish Editing';} else {title.contentEditable='false'; info.contentEditable='false'; this.innerHTML='Edit';}">Edit</h5>
+            <p>||</p>
+            <h5 onclick="var parent = this.parentElement.parentElement.parentElement; var container = parent.parentElement.parentElement; var div = parent.parentElement; var assignmentNum = Array.from(container.children).indexOf(div); this.parentElement.parentElement.parentElement.remove(); eventMaster.splice(assignmentNum, 1); saveCookies();">Remove</h5>
+        </div>
+    </div>
+</div>
