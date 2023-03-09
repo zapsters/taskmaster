@@ -7,7 +7,7 @@ $("#header").load( "pieces/header.html", function() {
 sidebar = document.getElementById("sidebar");
 $("#sidebar").load( "pieces/sidebar.html", function() {
     console.log( "Sidebar load was performed." );
-    $('#homebtn').children().addClass("selected");
+    $(selectedbtn).children().addClass("selected");
     lockIcon = document.getElementById("lockspan");
 });
 
